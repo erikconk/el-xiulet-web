@@ -1,8 +1,8 @@
 const space = "&nbsp;"
-const infoImg = `<img class='singleCard-icons' src='../assets/info.png'>${space}`
-const checkedImg = `<img class='singleCard-icons' src='../assets/check.png'>${space}`
-const notImg = `<img class='singleCard-icons' src='../assets/not.png'>${space}`
-const moneyImg = `<img class='tarifas-icons' src='../assets/money.png'>${space}`
+const infoImg = `<img class='singleCard-icons' src='/assets/info.png'>${space}`
+const checkedImg = `<img class='singleCard-icons' src='/assets/check.png'>${space}`
+const notImg = `<img class='singleCard-icons' src='/assets/not.png'>${space}`
+const moneyImg = `<img class='tarifas-icons' src='/assets/money.png'>${space}`
 const newLine = "<br>"
 
 export const info = [
