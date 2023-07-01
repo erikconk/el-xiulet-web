@@ -1,0 +1,61 @@
+nav{
+    /*
+    border: 2px solid red;
+    */
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 10; 
+    padding-top: 1.5rem;
+}
+.menu-image{
+    /*
+    border: 1px solid red;
+    */
+    width: 4vh;
+    align-self: flex-end;
+    cursor: pointer;
+    padding: 6vh;
+}
+.navBar-menu{
+    /*
+    border: 1px solid green;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    */
+    width: 85%;
+    display: flex;
+    margin-left: auto;
+    align-self: flex-end; 
+    border-radius: 5px;
+    color: rgba(19, 89, 146, 0.5);
+    font-size: clamp(0.5rem, 1vw, 0.8rem);
+    text-align: center;
+    align-items: center;
+    gap: clamp(0.4rem, 1vw, 2rem);;
+    margin: 0 auto;
+}
+.navBar-item{
+    /*
+    border: 1px solid blue;
+    */
+    font-family: ubuntu-regular;
+    white-space: nowrap;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    width: 100%;
+    transition: 300ms;
+}
+.navBar-item:hover{
+    color: rgb(19, 89, 146);
+}
+.navBar-item::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(19, 89, 146);
+    transition: 300ms;
+}
+.navBar-item:hover::after {
+    width: 100%;
+}

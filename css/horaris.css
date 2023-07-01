@@ -1,0 +1,52 @@
+.horaris{
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+.horaris > h2{
+    color: rgb(255, 223, 40);
+}
+
+.horari-carta{
+    box-shadow: var(--shadowBox);
+    border-radius: 5px;
+}
+.horari-carta > h3{
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgba(126, 126, 126, 0.3);
+    background-color: rgb(255, 247, 131);
+    text-align: center;
+    color: #383838;
+    padding: 0.5rem 0;
+}
+.horari-carta > div{
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+.fade-box{
+    opacity: 0;
+    animation: fade-in 0.5s linear forwards;
+    -webkit-animation: fade-in 0.5s linear forwards;
+}
+.horari-carta-content{
+    padding: 0 0 0.5rem 0;
+}
+.horari-carta-content > div{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 153, 255, 0.3);
+}
+.horari-carta-content > div > p{
+    color: rgb(92, 92, 92);
+    line-height: 1.6;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#horari-tarda{
+    display: none;
+}
+@keyframes  fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

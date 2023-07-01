@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Xiulet</title>
+
+    <!--SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/inscripcions.css">
+    <link rel="stylesheet" href="./css/contacte.css">
+    <link rel="stylesheet" href="./css/toogleBox.css">
+    <link rel="stylesheet" href="./css/textCard.css">
+    <link rel="stylesheet" href="./css/singleCard.css">
+    <link rel="stylesheet" href="./css/mainCard.css">
+    <link rel="stylesheet" href="./css/serveis.css">
+    <link rel="stylesheet" href="./css/toogleSwitch.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/horaris.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/mediaScreen.css">
+    <link rel="stylesheet" href="./css/tarifes.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+</head>
+<body>
+    <nav id="navContainer">
+        <div id="navBar" class="navBar-menu">
+            <img id="menu-icon" class="menu-image" src="./assets/menu-icon.png" alt="menu-icon" onclick="menuHandle()">
+            <h2 id="item-inici" class="navBar-item" onclick="scrollToPage(this)">Inici</h2>
+            <h2 id="item-quiSom" class="navBar-item" onclick="scrollToPage(this)">Qui som?</h2>
+            <h2 id="item-horaris" class="navBar-item" onclick="scrollToPage(this)">Horaris</h2>
+            <h2 id="item-serveis" class="navBar-item" onclick="scrollToPage(this)">Serveis</h2>
+            <h2 id="item-tarifes" class="navBar-item" onclick="scrollToPage(this)">Tarifes</h2>
+            <h2 id="item-contacte" class="navBar-item" onclick="scrollToPage(this)">Contacte</h2>
+        </div>
+    </nav>
+    <main>
+        <article id="inici" class="home mainCard">
+            <img src="./assets/xiulet.png" alt="el-xiulet-logo">
+        </article>
+        <article id="quiSom" class="about mainCard">
+            <h2 class="mainCard-title">Qui som</h2>
+            <div class="mainCard-content">
+                <div class="mainCard-half-content">
+                    <div class="text-card mainCard-content-center">
+                        <p>
+                            Som una ludoteca infantil situada a <i>ciutat de Valls</i> per a nens a partir de tres anys.
+                            Comptem amb monitors de lleure qualificats que faran gaudir de la millor experiència als infants i així poder educar-los des del món del lleure.
+                            
+                            Les instal·lacions del centre estan capacitades per realitzar circuits psicomotrius, sala de projecció, espai recreatiu, menjador i
+                            zona d'estudi.
+                        </p>
+                    </div>
+                </div>
+                <div class="mainCard-half-content">
+                    <img class="mainCard-content-image" src="./assets/about2.png" alt="">
+                </div>
+            </div>
+        </article>
+        <article id="horaris" class="horaris mainCard">
+            <h2 class="mainCard-title">Horaris</h2>
+            <div class="mainCard-content">
+                <div class="mainCard-half-content">
+                    <img class="mainCard-content-image" src="./assets/horaris-imgage.png" alt="">
+                </div>
+                <div class="mainCard-half-content">
+                    <div class="toogle-box">
+                        <span>Matí</span>
+                        <label class="switch">
+                            <input type="checkbox" onchange="switchHorarios(this)";>
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Tarda</span>
+                    </div> 
+                    <div class="horari-carta">
+                        <h3>
+                            Dies lectius
+                        </h3>
+                        <div id="horari-mati" class="horari-carta-content">
+                            <div><p>Dilluns</p><p class="fade-box">7:30h a 9:00h</p></div>
+                            <div><p>Dimarts</p><p class="fade-box">7:30h a 9:00h</p></div>
+                            <div><p>Dimecres</p><p class="fade-box">7:30h a 9:00h</p></div>
+                            <div><p>Dijous</p><p class="fade-box">7:30h a 9:00h</p></div>
+                            <div><p>Divendres</p><p class="fade-box">7:30h a 9:00h</p></div>
+                        </div>
+                        <div id="horari-tarda" class="horari-carta-content">
+                            <div><p>Dilluns</p><p class="fade-box">16:30h a 20:00h</p></div>
+                            <div><p>Dimarts</p><p class="fade-box">16:30h a 20:00h</p></div>
+                            <div><p>Dimecres</p><p class="fade-box">13:30h a 20:00h</p></div>
+                            <div><p>Dijous</p><p class="fade-box">16:30h a 20:00h</p></div>
+                            <div><p>Divendres</p><p class="fade-box">15:30h a 20:00h</p></div>
+                        </div>
+                    </div>
+                    <div class="horari-carta">
+                        <h3>Dies festius</h3>
+                        <div class="horari-carta-festiu horari-carta-content">
+                            <div><p>Dilluns</p><p>8:00h a 20:00h</p></div>
+                            <div><p>Dimarts</p><p>8:00h a 20:00h</p></div>
+                            <div><p>Dimecres</p><p>8:00h a 20:00h</p></div>
+                            <div><p>Dijous</p><p>8:00h a 20:00h</p></div>
+                            <div><p>Divendres</p><p>8:00h a 20:00h</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="serveis" class="serveis mainCard">
+            <h2 class="mainCard-title">Serveis</h2>
+            <div class="mainCard-content">
+                <div class="mainCard-half-content">
+                    <!-- Swiper -->
+                   <div class="swiper serveis-swiper">
+                       <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="serveis-card"> 
+                                <h3>Acompanyament i recollida a l'escola</h3>
+                                <p>
+                                    Anem amb l'infant a l'escola al matí i també anem a buscar-lo quan surti del col·legi. Després anem al centre amb els seus companys.
+                                    <br>
+                                    Anem fins a <i><strong>l'escola francesa i andorrana</strong></i> de ciutat de valls.
+                                </p>
+                            </div>
+                        </div>
+                           <div class="swiper-slide">
+                               <div class="serveis-card"> 
+                                   <h3>Acompanyament i recollida a la parada d'autobús</h3>
+                                   <p>
+                                       Portem a l'infant a la parada, perquè pugui agafar l'autobús i anar a classe amb els seus companys sense que s'hagi de preocupar.
+                                       <br>
+                                       La parada d'acompanyament al matí és <i><strong>Font de la Call nº 5100.</strong></i>
+                                       <br>
+                                       La parada de recollida és <i><strong>Font de la Call nº 5099.</strong></i>
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="swiper-slide">
+                               <div class="serveis-card">
+                                   <h3>Acompanyament a les activitats extraescolars</h3>
+                                   <p>
+                                        L'acompanyem a les activitats que faci després de l'escola perquè no hagi d'anar sola cap lloc.
+                                        <br>
+                                        Els desplaçaments els fem dins del nucli urbà d'Andorra la Vella amb un radi de sisens metres des de la guarderia.
+                                        <br>
+                                        Portem a l'infant fins l'edifici <i><strong>la Llacuna, plaça del poble</strong></i>, etc.
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="swiper-slide">
+                               <div class="serveis-card">
+                                   <h3>Activitats lúdiques</h3>
+                                   <p>
+                                        Al centre fem circuits psicomotrius, jocs tradicionals o de taula i videojocs recreatius per passar-ho genial després d'un dia a l'escola.
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="swiper-slide">
+                               <div class="serveis-card">
+                                   <h3>Excursions i activitats dirigides</h3>
+                                   <p>
+                                    A les vacances fem <i><strong>sortides a la muntanya, jocs al parc, activitats aquàtiques</strong></i> i també anem a <i><strong>la biblioteca d'Andorra la Vella.</strong></i>
+                                    <br>
+                                    Farem tot el possible perquè ho passis genial i gaudeixis de l'estiu.
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="swiper-pagination"></div>
+                       <div class="swiper-button-next btn-laptop"></div>
+                       <div class="swiper-button-prev btn-laptop"></div>
+                   </div>
+                </div>
+                <div class="mainCard-half-content">
+                    <img class="mainCard-content-image" src="./assets/serveis-image2.png" alt="">
+                </div>
+            </div>
+        </article>
+        <article id="tarifes" class="tarifes mainCard">
+            <h2 class="mainCard-title">Tarifes</h2>
+            <div class="mainCard-content">
+                <div class="mainCard-half-content">
+                    <img class="mainCard-content-image" src="./assets/tarifas-image.png" alt="">
+                </div>
+                <div class="mainCard-half-content">
+                    <div class="toogle-box tarifas-resize">
+                        <span>Forfets Anuals</span>
+                        <label class="switch">
+                            <input onchange="switchTarifas(this)" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Forfets Puntuals</span>
+                    </div>
+                    <!-- Swiper -->
+                   <div class="swiper tarifes-swiper">
+                       <div id="tarifas-anuals-parent" class="swiper-wrapper  fade-box">
+                           <!-- Tarifas Cards -->
+                       </div>
+                       <div class="swiper-pagination"></div>
+                       <div class="swiper-button-next btn-laptop"></div>
+                       <div class="swiper-button-prev btn-laptop"></div>
+                   </div>
+                    <!-- Swiper -->
+                    <div class="swiper tarifes-swiper">
+                        <div id="tarifas-puntuals-parent" class="swiper-wrapper fade-box">
+                            <!-- Tarifas Cards -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next btn-laptop"></div>
+                        <div class="swiper-button-prev btn-laptop"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="contacte" class="contacte mainCard">
+            <h2 class="mainCard-title">Contacte</h2>
+            <div class="mainCard-content">
+                <div class="mainCard-half-content">
+                    <div class="contacte-card">
+                        <form>
+                            <h4>Contactan's</h4>
+                            <p>No dubtis a escriure'ns si tens alguna pregunta o si vols fer-nos alguna consulta.</p>
+                            <div>
+                                <label for="name">Nom</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Correu electronic</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="message">Comentari</label>
+                                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mainCard-half-content">
+                    <div class="contacte-card2-tittle">Més informació</div>
+                    <div class="contacte-card2">
+                        <a href="https://goo.gl/maps/CggRUHBCUs9WCSHW9">
+                            <img src="./assets/localization-icon.png" alt="localizacion-icon">
+                            <h4>Ubicació</h4>
+                        </a>
+                        <a  href="tel:+376326499">
+                            <img src="./assets/WhatsApp_icon.png" alt="whatsapp-icon">
+                            <h4>WhatsApp</h4>
+                        </a>
+                        <a href="mailto:elxiulet@hotmail.com">
+                            <img src="./assets/email-icon3.png" alt="email-icon">
+                            <h4>Email</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="./js/navBar.js"></script>
+    <script type="module" src="./js/init.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/pages.js"></script>
+    
+
+</body>
+</html>
