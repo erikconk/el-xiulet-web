@@ -5,3 +5,55 @@
     color: #FF9A8B;
 }
 
+.image-slider-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.image-slider-card > h4{
+    padding: 1rem;
+    border-radius: 5px 5px 0 0 ;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(5, 54, 146);
+}
+.image-slider-card > div{
+    border-radius: 0 0 5px 5px;
+    height: 100%;
+    padding: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 2s;  
+}
+.image-slider-card > div  > span{
+    white-space: nowrap;
+    text-align: justify;
+    border-radius: 5px;
+    position: absolute;
+    padding: 0.5rem 2rem;
+    color: rgb(5, 54, 146);
+    transform: translate(-50%, -50%);
+    animation: textMovement 5s forwards infinite;
+    background-color: rgba(249,232,51,0.9);
+}
+@keyframes fadeText{
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes textMovement{
+    0%{transform: translate(-50%, -50%); opacity: 0;}
+    10%{transform: translate(-50%, -50%);opacity: 1}
+    50%{transform: translate(-50%, -90%); opacity: 1;}
+    90%{transform: translate(-50%, -50%);opacity: 1}
+    100%{transform: translate(-50%, -50%); opacity: 0;}
+    /*
+    0%{left: -100%; opacity: 0;}
+    20%{opacity: 1;}
+    50%{opacity: 1;}
+    90%{left: 0; opacity: 1;}
+    100%{left: 300%; opacity: 0;}
+    */
+}

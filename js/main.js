@@ -23,6 +23,19 @@ function switchTarifas(event){
 
 var windowSize = window.innerWidth;
 if(windowSize < 800){
+    var swiperAboutMobile = new Swiper(".about-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
     var swiperServeisMobile = new Swiper(".serveis-swiper", {
         direction: 'horizontal',
         spaceBetween: 10,
@@ -40,6 +53,19 @@ if(windowSize < 800){
         },
     });
 }else{
+    var swiperAboutLaptop = new Swiper(".about-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
     var swiperServeisLaptop = new Swiper(".serveis-swiper", {
         slidesPerView: 1,
         spaceBetween: 30,
