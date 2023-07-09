@@ -1,0 +1,1 @@
+:root{--navBarColor:#FFB84C;--iconsSize:clamp(0.8rem, 2vw, 1rem);--shadowBox:5px 5px 5px rgba(0, 0, 0, 0.1);--titleCardSize:clamp(4rem, 12vw, 10rem);--mediumCardSize:clamp(0.8rem, 2vw, 1.2rem);--textSize:clamp(0.8rem, 2vw, 1.2rem)}*{padding:0;margin:0;font-family:ubuntu-regular;line-height:1.6}a{text-decoration:underline;cursor:pointer;font-style:italic}

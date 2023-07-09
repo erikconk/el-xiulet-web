@@ -1,20 +1,12 @@
 .mainCard{
     display: flex;
     flex-direction: column;
-    /*
-    justify-content: center;
-    border: 3px solid pink;
-    padding: 5vh 0;
-    */
     align-items: center;
     text-align: center;
     width: 100%;
     min-height: 100vh;
 }
 .mainCard-title{
-    /*
-    border: 1px solid green;
-    */
     font-size: var(--titleCardSize);
     min-height: 15vh;
     width: 100%;
@@ -24,10 +16,6 @@
     white-space: nowrap;
 }
 .mainCard-content{
-    /*
-    min-height: 85vh;
-    border: 1px solid blue;
-    */
     margin-bottom: 5vh;
     min-height: 75vh;
     width: 90%;
@@ -36,9 +24,6 @@
     justify-content: center;
 }
 .mainCard-content-single{
-    /*
-    border: 1px solid blue;
-    */
     width: 90%;
     display: flex;
     gap: 2rem;
@@ -46,9 +31,6 @@
     align-items: center;
 }
 .mainCard-content-vertical{
-    /*
-    border: 1px solid blue;
-    */
     width: 90%;
     min-height: 85vh;
     display: flex;
@@ -57,9 +39,6 @@
     gap: 2rem;
 }
 .mainCard-content > div {
-    /*
-    border: 1px solid red;
-    */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -72,9 +51,6 @@
     justify-content: center;
 }
 .mainCard-content-image{
-    /*
-    border: 3px solid white;
-    */
     display: flex;
     align-self: center;
     justify-self: center;

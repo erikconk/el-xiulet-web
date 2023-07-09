@@ -37,23 +37,10 @@
     animation: textMovement 5s forwards infinite;
     background-color: rgba(249,232,51,0.9);
 }
-@keyframes fadeText{
-    0%{opacity: 0;}
-    20%{opacity: 1;}
-    80%{opacity: 1;}
-    100%{opacity: 0;}
-}
 @keyframes textMovement{
     0%{transform: translate(-50%, -50%); opacity: 0;}
     10%{transform: translate(-50%, -50%);opacity: 1}
     50%{transform: translate(-50%, -90%); opacity: 1;}
     90%{transform: translate(-50%, -50%);opacity: 1}
     100%{transform: translate(-50%, -50%); opacity: 0;}
-    /*
-    0%{left: -100%; opacity: 0;}
-    20%{opacity: 1;}
-    50%{opacity: 1;}
-    90%{left: 0; opacity: 1;}
-    100%{left: 300%; opacity: 0;}
-    */
 }

@@ -1,12 +1,4 @@
 @font-face {
     font-family: ubuntu-regular;
-    src: url(../assets/Ubuntu/Ubuntu-Regular.ttf);
-}
-@font-face {
-    font-family: caprasimo-regular;
-    src: url(../assets/Caprasimo-Regular.ttf);
-}
-@font-face {
-    font-family: PatrickHandSC-regular;
-    src: url(../assets/PatrickHandSC-Regular.ttf);
+    src: url(../assets/fonts/Ubuntu-Regular.woff);
 }

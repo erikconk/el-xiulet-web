@@ -1,0 +1,1 @@
+.singleCard{text-align:start;width:100%;display:flex;flex-direction:column}.singleCard-title{background-color:rgba(255,255,255,.5);padding:1rem}.singleCard-includes{border-top:1px solid rgba(0,0,0,.2);padding:1rem}.singleCard-icons{width:clamp(.8rem,2vw,1rem)}
