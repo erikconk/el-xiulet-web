@@ -19,7 +19,6 @@ const movement = [
 var imageElement = document.getElementById("about-images-slider");
 
 function nextImage(){
-    console.log(preloadImages[index].src)
     imageElement.style.backgroundImage = `url(${preloadImages[index].src})`
     imageElement.animate(movement, animationTime)
     index > 2 ? index = 0 : index++;
